@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site - Login</title>
+    <link rel="stylesheet" href="/SiteTemplate(Conectados)/src/css/styles.css">
+</head>
+<body>
+
+    <!-- Página de Login -->
+    <div id="login-page">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="/login" method="POST">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+                <div class="login-options">
+                    <label>
+                        <input type="checkbox"> Salvar
+                    </label>
+                    <a href="#">Recuperar senha?</a>
+                </div>
+                <button type="submit">Log in</button>
+            </form>
+            <div class="register">
+                Não possui uma conta? <a href="#">Registre-se aqui</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/SiteTemplate(Conectados)/src/js/script.js"></script>
+</body>
+</html>
