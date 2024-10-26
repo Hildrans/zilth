@@ -1,116 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
-    font-family: 'poppins',sans-serif;
+    font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins */
 }
-section{
+
+section {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    
-    background: url('background6.jpg')no-repeat;
-    background-position: center;
+    background: url('background6.jpg') no-repeat center center; /* Imagem de fundo */
     background-size: cover;
 }
-.form-box{
+
+.form-box {
     position: relative;
     width: 400px;
     height: 450px;
-    background: transparent;
-    border: 2px solid rgba(255,255,255,0.5);
+    background: transparent; /* Pode ajustar se necessário */
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-h2{
+
+h2 {
     font-size: 2em;
-    color: #fff;
+    color: #fff; /* Cor do texto do título */
     text-align: center;
 }
-.inputbox{
+
+.inputbox {
     position: relative;
     margin: 30px 0;
     width: 310px;
     border-bottom: 2px solid #fff;
 }
-.inputbox label{
+
+.inputbox label {
     position: absolute;
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
-    color: #fff;
+    color: #fff; /* Cor do texto do rótulo */
     font-size: 1em;
     pointer-events: none;
-    transition: .5s;
+    transition: 0.5s;
 }
+
 input:focus ~ label,
-input:valid ~ label{
-top: -5px;
+input:valid ~ label {
+    top: -5px; /* Rótulo se move quando o campo é focado ou preenchido */
 }
+
 .inputbox input {
     width: 100%;
     height: 50px;
-    background: transparent;
+    background: transparent; /* Campo de entrada transparente */
     border: none;
-    outline: none;
+    outline: none; /* Remove o contorno padrão */
     font-size: 1em;
-    padding:0 35px 0 5px;
-    color: #fff;
+    padding: 0 35px 0 5px; /* Padding para o campo */
+    color: #fff; /* Cor do texto no campo */
 }
-.inputbox ion-icon{
+
+.inputbox ion-icon {
     position: absolute;
     right: 8px;
-    color: #fff;
+    color: #fff; /* Cor do ícone */
     font-size: 1.2em;
     top: 20px;
 }
-.forget{
-    margin: -15px 0 15px ;
-    font-size: .9em;
-    color: #fff;
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    color: #fff; /* Cor do texto */
     display: flex;
     justify-content: space-between;  
 }
 
-.forget label input{
-    margin-right: 3px;
-    
+.forget label input {
+    margin-right: 3px; /* Espaçamento entre o checkbox e o texto */
 }
-.forget label a{
-    color: #fff;
-    text-decoration: none;
+
+.forget label a {
+    color: #fff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
 }
-.forget label a:hover{
-    text-decoration: underline;
+
+.forget label a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
 }
-button{
+
+button {
     width: 100%;
     height: 40px;
     border-radius: 40px;
-    background: #fff;
+    background: #fff; /* Cor do botão */
     border: none;
     outline: none;
-    cursor: pointer;
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 600; /* Negrito */
 }
-.register{
-    font-size: .9em;
-    color: #fff;
+
+.register {
+    font-size: 0.9em;
+    color: #fff; /* Cor do texto */
     text-align: center;
     margin: 25px 0 10px;
 }
-.register p a{
+
+.register p a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* Cor do link de registro */
     font-weight: 600;
 }
-.register p a:hover{
-    text-decoration: underline;
+
+.register p a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
 }
